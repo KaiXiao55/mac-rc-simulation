@@ -1,0 +1,23 @@
+# Local build/user state
+.DS_Store
+DerivedData/
+build/
+*.xcuserstate
+xcuserdata/
+*.xcuserdatad/
+# Optional third-party models and local/private inputs
+*.mlpackage/
+*.mlmodelc/
+*.mlmodel
+*.pt
+*.pth
+.env
+.env.*
+*.pem
+*.key
+*password*
+*.expect
+# Generated experiment outputs
+runs/
+*.log
+.build/

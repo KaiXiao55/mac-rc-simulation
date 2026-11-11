@@ -1,0 +1,55 @@
+{
+  "source_snapshot": "macRCtrackerSimulator_yolo_vsim_minimal_20260519",
+  "swift_files": [
+    "BatchSimRunner.swift",
+    "BenchRunner.swift",
+    "ByteTracker.swift",
+    "CalibratedFOVMap.swift",
+    "Calibrator.swift",
+    "ContentView.swift",
+    "DatasetGenerator.swift",
+    "DatasetGeneratorUI.swift",
+    "FrameDegrader.swift",
+    "SingleTargetTracker.swift",
+    "VideoAnnotationModule.swift",
+    "VirtualRaceSimulator.swift",
+    "VirtualRaceTrackGenerator.swift",
+    "VirtualRaceUI.swift",
+    "Vntrackerlabmodule.swift",
+    "YOLOGTTestModule.swift",
+    "macRCtrackerSimulatorApp.swift"
+  ],
+  "excluded": [
+    "CoreML weight bundles",
+    "videos and annotations",
+    "training data",
+    "remote server scripts",
+    "credential files",
+    "Xcode user data",
+    "app icon raster assets"
+  ],
+  "changes": [
+    "Remove automatic credential file discovery",
+    "Replace personal absolute paths with a generic Documents data directory",
+    "Remove Apple development team identifiers",
+    "Change bundle identifier",
+    "Remove stale synchronized-folder exceptions",
+    "Remove app icon dependency",
+    "Add opt-in one-scenario, two-second smoke using existing batch implementation",
+    "Isolate opt-in smoke from persisted batch results; default batch behavior unchanged"
+  ],
+  "export_only_files": [
+    "macRCtrackerSimulator/PublicSmokeConfig.swift",
+    "scripts/build.sh",
+    "scripts/smoke.py"
+  ],
+  "media": [
+    "docs/demo/vsim-multiscene-landscape.mp4",
+    "docs/demo/vsim-multiscene-landscape-poster.jpg"
+  ],
+  "historical_evidence": {
+    "actual_yolo": "docs/evidence/historical-yolo-summary.csv (10 rows filtered by usesSimulatedYolo=false from historical 20-row paired batch)",
+    "simyolo": "docs/evidence/historical-simyolo-summary.csv (10 rows copied unchanged)"
+  },
+  "scope": "Source showcase; no model weights, no training execution, no ManiSkill integration or public license claim."
+}
